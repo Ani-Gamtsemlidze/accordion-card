@@ -32,29 +32,39 @@
 .card-box{
 
     max-width: 920px;
+    width: 100%;
     height: 500px;
     background-color: #fff;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     border-radius: 23px;
     display: flex;
+    .box-svg{
+        position: absolute;
+        left: 120px;
+        bottom: 42%;
+        z-index: 1;
+        transform: translateY(44%);
+    }
+}
     .card-image{
-        width: 471.69px;
+        width: 371.69px;
+        flex: 0 0 371.69px;
         position: relative;
         background-image: url(./images/bg-pattern-desktop.svg);
-        background-position: right;
+        background-position: 100% 70%;
         background-repeat: no-repeat;
+        overflow: hidden;
         img{
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-        svg{
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            transform: translateX(-12%);
         }
 
     }
+  .card-faq{
+    flex-grow: 1;
+  }
     .question-box{
         padding: 45px 111px 0;
         h2{
@@ -68,10 +78,41 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 18px;
+            cursor: pointer;
+            border-bottom: 1px solid #E8E8EA;
+            padding-bottom: 15px;
+
+            p{
+
+                &:hover{
+                    color: #F47B56;
+                }
+
+
+            }
+
+            &.active{
+                p{
+                    color: #1E1F36;
+                    font-weight: bold;
+                }
+              svg{
+                transform: rotate(180deg);
+                cursor: pointer;
+              }
+
+                &~.answers {
+                    display: block;
+                }
+            }
         p{
             color: #4B4C5F;
             font-size: 14px;
             line-height: 17.36px;
+            transition: 0.3s;
+        }
+        svg{
+            transition: 0.5s;
         }
     }
         .answers{
@@ -89,4 +130,4 @@
 
         }
     }
-}
+
