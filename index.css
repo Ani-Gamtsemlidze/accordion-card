@@ -140,7 +140,7 @@
     flex-direction: column;
     max-width: 327px;
     width: 100%;
-    height: 535px;
+    height: 500px;
     margin: 113px 27px 0px;
     position: relative;
   }
@@ -153,12 +153,12 @@
     overflow: unset;
     background: none;
     position: absolute;
-    top: -20%;
+    top: -25%;
+    transform: translateY(-27px);
   }
   .card-container .card-image svg {
     display: block;
-    position: absolute;
-    bottom: -30px;
+    transform: translateY(-28px);
   }
   .card-container .card-image .woman-desktop {
     display: none;
@@ -169,12 +169,10 @@
     -o-object-fit: contain;
        object-fit: contain;
     height: 100%;
-    position: sticky;
-    z-index: 1;
   }
   .card-faq {
     width: 100%;
-    margin-top: 40%;
+    margin-top: 36%;
   }
   .card-faq .question-box {
     padding: 0 15px 0;
