@@ -54,11 +54,14 @@
         background-position: 100% 70%;
         background-repeat: no-repeat;
         overflow: hidden;
-        img{
+        .woman-desktop{
             width: 100%;
             height: 100%;
             object-fit: contain;
             transform: translateX(-12%);
+        }
+        .mobile-woman-img{
+            display: none;
         }
 
     }
@@ -130,4 +133,56 @@
 
         }
     }
+    @media only screen and (max-width: 992px) {
+          .card-container{
+            flex-direction: column;
+          
+            width: 100%;
+            .card-box{
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                max-width: 327px;
+                width: 100%;
+                height: 620px;
+                margin: 50px 27px 40px;
+                .box-svg{
+                    display: none;
+                }
+            }
+            .card-image{
+                width: 236.85px;
+                flex: 0 0 236.85px;
+                overflow: unset;
+                background-image: url(./images/bg-pattern-mobile.svg);
+                background-position: 38% 37%;
+                transform: translateY(-38%);
+                .woman-desktop{
+                display: none;
 
+
+            }
+          }
+          .mobile-woman-img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            height: 139.37px;
+
+    
+          }
+          
+    }
+    .card-faq{
+        .question-box{
+            padding: 0 15px 0;
+            h2{
+                text-align: center;
+            }
+            .question1{
+
+            }
+        }
+    }
+}
