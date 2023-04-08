@@ -46,7 +46,6 @@
 
 .card-image {
   width: 371.69px;
-  flex: 0 0 371.69px;
   position: relative;
   background-image: url(./images/bg-pattern-desktop.svg);
   background-position: 100% 70%;
@@ -147,8 +146,7 @@
     overflow: unset;
     background: none;
     position: absolute;
-    top: -20%;
-    transform: translateY(-27px);
+    top: -24%;
   }
   .card-container .card-image .woman-desktop {
     display: none;
@@ -159,7 +157,6 @@
     -o-object-fit: contain;
        object-fit: contain;
     height: 100%;
-    transform: translateY(18px);
   }
   .card-faq {
     width: 100%;
