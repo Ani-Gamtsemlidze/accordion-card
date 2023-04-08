@@ -144,7 +144,6 @@
   }
   .card-container .card-image {
     width: 236.85px;
-    flex: 0 0 236.85px;
     overflow: unset;
     background: none;
     position: absolute;

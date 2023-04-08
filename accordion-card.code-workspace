@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../js-tasks"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "accordion-card"
+	}
+}
